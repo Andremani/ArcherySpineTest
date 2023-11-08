@@ -26,7 +26,7 @@ namespace Andremani.ArcherySpineTest
 
         private void Start()
         {
-            input.OnMainPointerRelease += TryShoot;
+            input.OnMainPointerUp += TryShoot;
             archerAnimationSkeleton.OnReleaseProjectile += ReleaseProjectile;
         }
 

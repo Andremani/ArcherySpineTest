@@ -28,6 +28,7 @@ namespace Andremani.ArcherySpineTest
             //distribute scale within points
             for (int i = 0; i < trajectoryPoints.Count; i++)
             {
+                trajectoryPoints[i].gameObject.SetActive(true);
                 float interpolationValue = (float)i / (trajectoryPoints.Count - 1);
                 float pointScale = Mathf.Lerp(pointBiggestScale, pointSmallestScale, interpolationValue);
                 trajectoryPoints[i].localScale = new Vector3(pointScale, pointScale, pointScale);
